@@ -68,11 +68,20 @@
       <link href="https://fonts.googleapis.com" rel="preconnect"/>
       <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
       <link href="../../../css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&amp;display=swap" rel="stylesheet"/>
-
       <script src="../../../wp-includes/js/imageLoader.js" defer></script>
-      
   </head>
   <body class="wp-singular page-template-default page  wp-embed-responsive wp-theme-qwerio-24">
+    <!-- Preloader -->
+    <div class="preloader fixed flex inset-0 size-full">
+        <!-- <div class="preloader__inner h-40 overflow-hidden">
+        <div class="preloader__text flex flex-col items-end text-h5 font-title font-medium">
+            <span>00%</span>
+            <span>30%</span>
+            <span>70%</span>
+            <span>100%</span>
+        </div>
+        </div> -->
+    </div>
 
     <header class="header">
         <div class="-container" data-animation="opa" data-animation-delay=".8">
@@ -93,14 +102,14 @@
                     </li>
                     <!-- Nav Menu Item 2 -->
                     <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children --three-cols menu-item-2033  --is-active" id="menu-item-2033">
-                    <a href="../../index.htm">
+                    <a href="../../../products/index.htm">
                         <span class="menu__item__text">Our Product Catagory</span>
                     </a>
                     <!-- Submenu Item 1-->
                     <div class="inner">
                         <ul class="sub-menu">
                         <li class="menu-item menu-item-type-post_type menu-item-object-accompagnement menu-item-2037" id="menu-item-2037">
-                            <a href="../../category/FoodandBeverages/index.htm">
+                            <a href="../FoodandBeverages/index.htm">
                             <span class="menu__item__picto">
                                 <img alt="picto" height="40" src="../../../wp-content/uploads/2024/11/Accompagnement-Intelligence-artificielle_Qwerio.svg" srcset="../wp-content/uploads/2024/11/Accompagnement-Intelligence-artificielle_Qwerio.svg" width="40"/>
                             </span>
@@ -108,7 +117,7 @@
                             </a>
                         </li>
                         <li class="menu-item menu-item-type-post_type menu-item-object-accompagnement menu-item-2036" id="menu-item-2036">
-                            <a href="../../category/LaundryProducts/index.htm">
+                            <a href="../LaundryProducts/index.htm">
                             <span class="menu__item__picto">
                                 <img alt="picto" height="20" src="../../../wp-content/uploads/2024/09/picto-7.svg" srcset="../wp-content/uploads/2024/09/picto-7.svg" width="20"/>
                             </span>
@@ -116,7 +125,7 @@
                             </a>
                         </li>
                         <li class="menu-item menu-item-type-post_type menu-item-object-accompagnement menu-item-2035" id="menu-item-2035">
-                            <a href="../../category/CleaningProducts/index.htm">
+                            <a href="../CleaningProducts/index.htm">
                             <span class="menu__item__picto">
                                 <img alt="picto" height="20" src="../../../wp-content/uploads/2024/09/picto-2.svg" srcset="../wp-content/uploads/2024/09/picto-2.svg" width="21"/>
                             </span>
@@ -124,7 +133,7 @@
                             </a>
                         </li>
                         <li class="menu-item menu-item-type-post_type menu-item-object-accompagnement menu-item-2034" id="menu-item-2034">
-                            <a href="../../category/DisposableProducts/index.htm">
+                            <a href="../DisposableProducts/index.htm">
                             <span class="menu__item__picto">
                                 <img alt="picto" height="20" src="../../../wp-content/uploads/2024/09/picto-1.svg" srcset="../wp-content/uploads/2024/09/picto-1.svg" width="20"/>
                             </span>
@@ -132,7 +141,7 @@
                             </a>
                         </li>
                         <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2040" id="menu-item-2040">
-                            <a href="../../category/HealthandBeauty/index.htm">
+                            <a href="../HealthandBeauty/index.htm">
                             <span class="menu__item__picto">
                                 <img alt="picto" height="20" src="../../wp-content/uploads/2024/09/picto-9.svg" srcset="../wp-content/uploads/2024/09/picto-9.svg" width="20"/>
                             </span>
@@ -209,24 +218,24 @@
             <div class="relative w-full s:max-w-720 mx-auto text-center pt-64">
                 <h1 class="h1-big">Our Product Range</h1>
                 <div class="flex flex-wrap gap-16 justify-center mt-56 mb-40">
-                <a href="../index.htm" class="blog__filter py-10 px-20 rounded-full bg-dark text-sm border-1 border-dark --is-active">
-                    All categories
-                </a>
-                <a href="../../category/FoodandBeverages/index.htm" class="blog__filter py-10 px-20 rounded-full bg-dark text-sm border-1 border-dark">
-                    Food & Beverages
-                </a>
-                <a href="../../category/LaundryProducts/index.htm" class="blog__filter py-10 px-20 rounded-full bg-dark text-sm border-1 border-dark">
-                    Laundry Products
-                </a>
-                <a href="../../category/CleaningProducts/index.htm" class="blog__filter py-10 px-20 rounded-full bg-dark text-sm border-1 border-dark">
-                    Cleaning Products
-                </a>
-                <a href="../../category/DisposableProducts/index.htm" class="blog__filter py-10 px-20 rounded-full bg-dark text-sm border-1 border-dark">
-                    Disposable Products
-                </a>
-                <a href="../../category/HealthandBeauty/index.htm" class="blog__filter py-10 px-20 rounded-full bg-dark text-sm border-1 border-dark">
-                    Health & Beauty
-                </a>
+                    <a href="../../index.htm" class="blog__filter py-10 px-20 rounded-full bg-dark text-sm border-1 border-dark">
+                        All categories
+                    </a>
+                    <a href="../FoodandBeverages/index.htm" class="blog__filter py-10 px-20 rounded-full bg-dark text-sm border-1 border-dark --is-active">
+                        Food & Beverages
+                    </a>
+                    <a href="../LaundryProducts/index.htm" class="blog__filter py-10 px-20 rounded-full bg-dark text-sm border-1 border-dark">
+                        Laundry Products
+                    </a>
+                    <a href="../CleaningProducts/index.htm" class="blog__filter py-10 px-20 rounded-full bg-dark text-sm border-1 border-dark">
+                        Cleaning Products
+                    </a>
+                    <a href="../DisposableProducts/index.htm" class="blog__filter py-10 px-20 rounded-full bg-dark text-sm border-1 border-dark">
+                        Disposable Products
+                    </a>
+                    <a href="../HealthandBeauty/index.htm" class="blog__filter py-10 px-20 rounded-full bg-dark text-sm border-1 border-dark">
+                        Health & Beauty
+                    </a>
                 </div>
             </div>
 
@@ -235,17 +244,17 @@
                     <img class="absolute object-cover size-full -z-10" src="../../../wp-content/themes/sabahia-25/assets/images/highlight-magazine.webp" alt="Texture" loading="lazy" style="opacity: 30%;"/>
                     <div class="flex flex-col min-h-full justify-between gap-y-10 s:gap-y-24 p-32 s:p-40">
                         <h3 class="h3">
-                            Tide 
+                            Item Name
                         </h3>
-                        <img class="size-full -z-10" src="https://annonymus-sudo.github.io/Sabahia-Demo/products/category/LaundryProducts/images/1.png" alt=""/>
+                        <img class="size-full -z-10" src="https://annonymus-sudo.github.io/Sabahia-Demo/products/category/FoodandBeverages/images/1.jpg" alt=""/>
                         <div>
                             <div class="flex justify-between items-center flex-wrap gap-x-24 gap-y-16">
                                 <div class="flex items-start">
                                     <p class="text-sm leading-tight border-r-1 border-white/30 pr-12 mr-12">
-                                        Laundry Products
+                                        Food & Beverages
                                     </p>
                                     <p class="text-sm leading-tight pr-12 mr-12">
-                                        Tide
+                                        Item Name
                                     </p>
                                 </div>
                             </div>
@@ -256,9 +265,9 @@
                     <img class="absolute object-cover size-full -z-10" src="../../../wp-content/themes/sabahia-25/assets/images/highlight-magazine.webp" alt="Texture" loading="lazy" style="opacity: 30%;"/>
                     <div class="flex flex-col min-h-full justify-between gap-y-10 s:gap-y-24 p-32 s:p-40">
                         <h3 class="h3">
-                            Pepsi
+                            Item Name
                         </h3>
-                        <img class="size-full -z-10" src="https://annonymus-sudo.github.io/Sabahia-Demo/products/category/FoodandBeverages/images/3.png" alt=""/>
+                        <img class="size-full -z-10" src="https://annonymus-sudo.github.io/Sabahia-Demo/products/category/FoodandBeverages/images/17.jpg" alt=""/>
                         <div>
                             <div class="flex justify-between items-center flex-wrap gap-x-24 gap-y-16">
                                 <div class="flex items-start">
@@ -266,133 +275,7 @@
                                         Food & Beverages
                                     </p>
                                     <p class="text-sm leading-tight pr-12 mr-12">
-                                        Pepsi
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-                <a class="card-post-highlight relative block rounded-15 overflow-hidden" href="../end-of-sharepoint-on-premises-support-in-2026/index.htm" title=" End of SharePoint On-Premises Support in 2026: How to Prepare for the Transition ">
-                    <img class="absolute object-cover size-full -z-10" src="../../../wp-content/themes/sabahia-25/assets/images/highlight-magazine.webp" alt="Texture" loading="lazy" style="opacity: 30%;"/>
-                    <div class="flex flex-col min-h-full justify-between gap-y-10 s:gap-y-24 p-32 s:p-40">
-                        <h3 class="h3">
-                            Tide 
-                        </h3>
-                        <img class="size-full -z-10" src="https://annonymus-sudo.github.io/Sabahia-Demo/products/category/LaundryProducts/images/1.png" alt=""/>
-                        <div>
-                            <div class="flex justify-between items-center flex-wrap gap-x-24 gap-y-16">
-                                <div class="flex items-start">
-                                    <p class="text-sm leading-tight border-r-1 border-white/30 pr-12 mr-12">
-                                        Laundry Products
-                                    </p>
-                                    <p class="text-sm leading-tight pr-12 mr-12">
-                                        Tide
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-                <a class="card-post-highlight relative block rounded-15 overflow-hidden" href="../end-of-sharepoint-on-premises-support-in-2026/index.htm" title=" End of SharePoint On-Premises Support in 2026: How to Prepare for the Transition ">
-                    <img class="absolute object-cover size-full -z-10" src="../../../wp-content/themes/sabahia-25/assets/images/highlight-magazine.webp" alt="Texture" loading="lazy" style="opacity: 30%;"/>
-                    <div class="flex flex-col min-h-full justify-between gap-y-10 s:gap-y-24 p-32 s:p-40">
-                        <h3 class="h3">
-                            Pepsi
-                        </h3>
-                        <img class="size-full -z-10" src="https://annonymus-sudo.github.io/Sabahia-Demo/products/category/FoodandBeverages/images/3.png" alt=""/>
-                        <div>
-                            <div class="flex justify-between items-center flex-wrap gap-x-24 gap-y-16">
-                                <div class="flex items-start">
-                                    <p class="text-sm leading-tight border-r-1 border-white/30 pr-12 mr-12">
-                                        Food & Beverages
-                                    </p>
-                                    <p class="text-sm leading-tight pr-12 mr-12">
-                                        Pepsi
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-                <a class="card-post-highlight relative block rounded-15 overflow-hidden" href="../end-of-sharepoint-on-premises-support-in-2026/index.htm" title=" End of SharePoint On-Premises Support in 2026: How to Prepare for the Transition ">
-                    <img class="absolute object-cover size-full -z-10" src="../../../wp-content/themes/sabahia-25/assets/images/highlight-magazine.webp" alt="Texture" loading="lazy" style="opacity: 30%;"/>
-                    <div class="flex flex-col min-h-full justify-between gap-y-10 s:gap-y-24 p-32 s:p-40">
-                        <h3 class="h3">
-                            Tide 
-                        </h3>
-                        <img class="size-full -z-10" src="https://annonymus-sudo.github.io/Sabahia-Demo/products/category/LaundryProducts/images/1.png" alt=""/>
-                        <div>
-                            <div class="flex justify-between items-center flex-wrap gap-x-24 gap-y-16">
-                                <div class="flex items-start">
-                                    <p class="text-sm leading-tight border-r-1 border-white/30 pr-12 mr-12">
-                                        Laundry Products
-                                    </p>
-                                    <p class="text-sm leading-tight pr-12 mr-12">
-                                        Tide
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-                <a class="card-post-highlight relative block rounded-15 overflow-hidden" href="../end-of-sharepoint-on-premises-support-in-2026/index.htm" title=" End of SharePoint On-Premises Support in 2026: How to Prepare for the Transition ">
-                    <img class="absolute object-cover size-full -z-10" src="../../../wp-content/themes/sabahia-25/assets/images/highlight-magazine.webp" alt="Texture" loading="lazy" style="opacity: 30%;"/>
-                    <div class="flex flex-col min-h-full justify-between gap-y-10 s:gap-y-24 p-32 s:p-40">
-                        <h3 class="h3">
-                            Pepsi
-                        </h3>
-                        <img class="size-full -z-10" src="https://annonymus-sudo.github.io/Sabahia-Demo/products/category/FoodandBeverages/images/3.png" alt=""/>
-                        <div>
-                            <div class="flex justify-between items-center flex-wrap gap-x-24 gap-y-16">
-                                <div class="flex items-start">
-                                    <p class="text-sm leading-tight border-r-1 border-white/30 pr-12 mr-12">
-                                        Food & Beverages
-                                    </p>
-                                    <p class="text-sm leading-tight pr-12 mr-12">
-                                        Pepsi
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-                <a class="card-post-highlight relative block rounded-15 overflow-hidden" href="../end-of-sharepoint-on-premises-support-in-2026/index.htm" title=" End of SharePoint On-Premises Support in 2026: How to Prepare for the Transition ">
-                    <img class="absolute object-cover size-full -z-10" src="../../../wp-content/themes/sabahia-25/assets/images/highlight-magazine.webp" alt="Texture" loading="lazy" style="opacity: 30%;"/>
-                    <div class="flex flex-col min-h-full justify-between gap-y-10 s:gap-y-24 p-32 s:p-40">
-                        <h3 class="h3">
-                            Tide 
-                        </h3>
-                        <img class="size-full -z-10" src="https://annonymus-sudo.github.io/Sabahia-Demo/products/category/LaundryProducts/images/1.png" alt=""/>
-                        <div>
-                            <div class="flex justify-between items-center flex-wrap gap-x-24 gap-y-16">
-                                <div class="flex items-start">
-                                    <p class="text-sm leading-tight border-r-1 border-white/30 pr-12 mr-12">
-                                        Laundry Products
-                                    </p>
-                                    <p class="text-sm leading-tight pr-12 mr-12">
-                                        Tide
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-                <a class="card-post-highlight relative block rounded-15 overflow-hidden" href="../end-of-sharepoint-on-premises-support-in-2026/index.htm" title=" End of SharePoint On-Premises Support in 2026: How to Prepare for the Transition ">
-                    <img class="absolute object-cover size-full -z-10" src="../../../wp-content/themes/sabahia-25/assets/images/highlight-magazine.webp" alt="Texture" loading="lazy" style="opacity: 30%;"/>
-                    <div class="flex flex-col min-h-full justify-between gap-y-10 s:gap-y-24 p-32 s:p-40">
-                        <h3 class="h3">
-                            Pepsi
-                        </h3>
-                        <img class="size-full -z-10" src="https://annonymus-sudo.github.io/Sabahia-Demo/products/category/FoodandBeverages/images/3.png" alt=""/>
-                        <div>
-                            <div class="flex justify-between items-center flex-wrap gap-x-24 gap-y-16">
-                                <div class="flex items-start">
-                                    <p class="text-sm leading-tight border-r-1 border-white/30 pr-12 mr-12">
-                                        Food & Beverages
-                                    </p>
-                                    <p class="text-sm leading-tight pr-12 mr-12">
-                                        Pepsi
+                                        Item Name
                                     </p>
                                 </div>
                             </div>
@@ -401,7 +284,7 @@
                 </a>
             </div>
             <div class="pagination flex justify-center gap-x-12 mt-48">
-                <a href="../../index.htm" class="pagination__button prev">
+                <a href="./page-2.htm" class="pagination__button prev">
                   <svg
                     class="relative w-12 h-12 rotate-180"
                     width="16"
@@ -420,9 +303,9 @@
                     ></path>
                   </svg>
                 </a>
-                <a href="" class="pagination__button next pointer-events-none">
+                <a href="" class="pagination__button next">
                   <svg
-                    class="relative w-12 h-12"
+                    class="relative w-12 h-12 pointer-events-none"
                     width="16"
                     height="16"
                     viewbox="0 0 16 16"
