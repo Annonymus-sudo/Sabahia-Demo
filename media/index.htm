@@ -111,6 +111,18 @@
         width: 100%;
       }
 
+      @media (max-width: 768px) {
+        .instagram-feed {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
+      @media (max-width: 480px) {
+        .instagram-feed {
+          grid-template-columns: 1fr;
+        }
+      }
+      
       .insta-post {
         display: flex;
         flex-direction: column;
