@@ -67,6 +67,72 @@
     <link href="../css2?family=Inter:ital,opsz,wght@0,14.32,100.900;1,14.32,100.900&amp;display=swap" rel="stylesheet"/>
   
     <script src="../wp-includes/js/imageLoader.js" defer></script>
+
+    <!-- <style>
+      .instagram-feed {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+      }
+
+      @media (max-width: 768px) {
+        .instagram-feed {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
+      @media (max-width: 480px) {
+        .instagram-feed {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      .instagram-item {
+        overflow: hidden;
+        border-radius: 12px;
+      }
+
+      .instagram-item img, .instagram-item video {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+      .instagram-caption {
+        font-size: 14px;
+        padding-top: 8px;
+      }
+    </style> -->
+
+    <style>
+      .instagram-feed {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+        width: 100%;
+      }
+
+      .insta-post {
+        display: flex;
+        flex-direction: column;
+        border-radius: 12px;
+        overflow: hidden;
+      }
+
+      .insta-post img,
+      .insta-post video {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 12px;
+      }
+
+      .insta-post p {
+        margin-top: 10px;
+        font-size: 0.9rem;
+        color: #fff;
+      }
+    </style>
+
 </head>
 
 <body class="home wp-singular page-template page-template-templates page-template-home page-template-templateshome-php page  wp-embed-responsive wp-theme-qwerio-24" data-host="../en/" data-theme="../wp-content/themes/qwerio-24">
@@ -212,204 +278,25 @@
         </section>
 
         <!-- Blog Section-->
-        <section class="blog section">
-          <div class="-container -grid">
-            <div class="col-span-4 s:col-span-12 s:col-start-2">
-              <h2 class="ontitle" data-animation="subtitle">@alsabahiageneraltrading</h2>
-              <h3 class="h1" data-animation="paragraph">Instagram</h3>
-              <div class="blog__grid grid grid-cols-12 grid-row-2 gap-24">
-                
-                <!-- Post Item -->
-                <a class="card-post-highlight relative block rounded-15 overflow-hidden" href="#" title="Product Details">
-                  <img alt="Texture" class="absolute object-cover size-full -z-10" loading="lazy" src="../wp-content/themes/sabahia-25/assets/images/highlight-magazine.webp"/>
-                <div class="flex flex-col min-h-full justify-between gap-y-10 s:gap-y-24 p-32 s:p-40">
-                  <h3 class="h3">
-                    <br><br><br>
-                  </h3>
-                  <div>
-                    <p class="opacity-80 s:block hidden mb-24">
-                      <br><br><br>
-                    </p>
-                    <div class="flex justify-between items-center flex-wrap gap-x-24 gap-y-16">
-                      <div class="flex items-start">
-                        <p class="text-sm leading-tight border-r-1 border-white/30 pr-12 mr-12">24 March 2025</p>
-                        <p class="text-sm leading-tight">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem maxime, voluptate debitis illum doloremque iusto beatae sed in nulla inventore dicta? Dolor vitae laborum dolore. Sint veniam consequuntur quaerat repudiandae!</p>
-                      </div>
-                      <div class="card-post-highlight__arrow relative flex justify-center items-center min-w-32 size-32 rounded-full bg-white text-black border-white">
-                        <svg class="relative w-12 h-12" fill="none" height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M15.7071 8.70711C16.0976 8.31658 16.0976 7.68342 15.7071 7.29289L9.34315 0.928932C8.95262 0.538408 8.31946 0.538408 7.92893 0.928932C7.53841 1.31946 7.53841 1.95262 7.92893 2.34315L13.5858 8L7.92893 13.6569C7.53841 14.0474 7.53841 14.6805 7.92893 15.0711C8.31946 15.4616 8.95262 15.4616 9.34315 15.0711L15.7071 8.70711ZM0 9H15V7H0V9Z" fill="black">
-                          </path>
-                          <path d="M15.7071 8.70711C16.0976 8.31658 16.0976 7.68342 15.7071 7.29289L9.34315 0.928932C8.95262 0.538408 8.31946 0.538408 7.92893 0.928932C7.53841 1.31946 7.53841 1.95262 7.92893 2.34315L13.5858 8L7.92893 13.6569C7.53841 14.0474 7.53841 14.6805 7.92893 15.0711C8.31946 15.4616 8.95262 15.4616 9.34315 15.0711L15.7071 8.70711ZM0 9H15V7H0V9Z" fill="black">
-                          </path>
-                        </svg>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                </a>
-
-                <!-- Post Item -->
-                <a class="card-post-highlight relative block rounded-15 overflow-hidden" href="#" title="Product Details">
-                  <img alt="Texture" class="absolute object-cover size-full -z-10" loading="lazy" src="../wp-content/themes/sabahia-25/assets/images/highlight-magazine.webp"/>
-                <div class="flex flex-col min-h-full justify-between gap-y-10 s:gap-y-24 p-32 s:p-40">
-                  <h3 class="h3">
-                    <br><br><br>
-                  </h3>
-                  <div>
-                    <p class="opacity-80 s:block hidden mb-24">
-                      <br><br><br>
-                    </p>
-                    <div class="flex justify-between items-center flex-wrap gap-x-24 gap-y-16">
-                      <div class="flex items-start">
-                        <p class="text-sm leading-tight border-r-1 border-white/30 pr-12 mr-12">24 March 2025</p>
-                        <p class="text-sm leading-tight">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem maxime, voluptate debitis illum doloremque iusto beatae sed in nulla inventore dicta? Dolor vitae laborum dolore. Sint veniam consequuntur quaerat repudiandae!</p>
-                      </div>
-                      <div class="card-post-highlight__arrow relative flex justify-center items-center min-w-32 size-32 rounded-full bg-white text-black border-white">
-                        <svg class="relative w-12 h-12" fill="none" height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M15.7071 8.70711C16.0976 8.31658 16.0976 7.68342 15.7071 7.29289L9.34315 0.928932C8.95262 0.538408 8.31946 0.538408 7.92893 0.928932C7.53841 1.31946 7.53841 1.95262 7.92893 2.34315L13.5858 8L7.92893 13.6569C7.53841 14.0474 7.53841 14.6805 7.92893 15.0711C8.31946 15.4616 8.95262 15.4616 9.34315 15.0711L15.7071 8.70711ZM0 9H15V7H0V9Z" fill="black">
-                          </path>
-                          <path d="M15.7071 8.70711C16.0976 8.31658 16.0976 7.68342 15.7071 7.29289L9.34315 0.928932C8.95262 0.538408 8.31946 0.538408 7.92893 0.928932C7.53841 1.31946 7.53841 1.95262 7.92893 2.34315L13.5858 8L7.92893 13.6569C7.53841 14.0474 7.53841 14.6805 7.92893 15.0711C8.31946 15.4616 8.95262 15.4616 9.34315 15.0711L15.7071 8.70711ZM0 9H15V7H0V9Z" fill="black">
-                          </path>
-                        </svg>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                </a>
-
-                <!-- Post Item -->
-                <a class="card-post-highlight relative block rounded-15 overflow-hidden" href="#" title="Product Details">
-                  <img alt="Texture" class="absolute object-cover size-full -z-10" loading="lazy" src="../wp-content/themes/sabahia-25/assets/images/highlight-magazine.webp"/>
-                <div class="flex flex-col min-h-full justify-between gap-y-10 s:gap-y-24 p-32 s:p-40">
-                  <h3 class="h3">
-                    <br><br><br>
-                  </h3>
-                  <div>
-                    <p class="opacity-80 s:block hidden mb-24">
-                      <br><br><br>
-                    </p>
-                    <div class="flex justify-between items-center flex-wrap gap-x-24 gap-y-16">
-                      <div class="flex items-start">
-                        <p class="text-sm leading-tight border-r-1 border-white/30 pr-12 mr-12">24 March 2025</p>
-                        <p class="text-sm leading-tight">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem maxime, voluptate debitis illum doloremque iusto beatae sed in nulla inventore dicta? Dolor vitae laborum dolore. Sint veniam consequuntur quaerat repudiandae!</p>
-                      </div>
-                      <div class="card-post-highlight__arrow relative flex justify-center items-center min-w-32 size-32 rounded-full bg-white text-black border-white">
-                        <svg class="relative w-12 h-12" fill="none" height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M15.7071 8.70711C16.0976 8.31658 16.0976 7.68342 15.7071 7.29289L9.34315 0.928932C8.95262 0.538408 8.31946 0.538408 7.92893 0.928932C7.53841 1.31946 7.53841 1.95262 7.92893 2.34315L13.5858 8L7.92893 13.6569C7.53841 14.0474 7.53841 14.6805 7.92893 15.0711C8.31946 15.4616 8.95262 15.4616 9.34315 15.0711L15.7071 8.70711ZM0 9H15V7H0V9Z" fill="black">
-                          </path>
-                          <path d="M15.7071 8.70711C16.0976 8.31658 16.0976 7.68342 15.7071 7.29289L9.34315 0.928932C8.95262 0.538408 8.31946 0.538408 7.92893 0.928932C7.53841 1.31946 7.53841 1.95262 7.92893 2.34315L13.5858 8L7.92893 13.6569C7.53841 14.0474 7.53841 14.6805 7.92893 15.0711C8.31946 15.4616 8.95262 15.4616 9.34315 15.0711L15.7071 8.70711ZM0 9H15V7H0V9Z" fill="black">
-                          </path>
-                        </svg>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                </a>
-
-                <!-- Post Item -->
-                <a class="card-post-highlight relative block rounded-15 overflow-hidden" href="#" title="Product Details">
-                  <img alt="Texture" class="absolute object-cover size-full -z-10" loading="lazy" src="../wp-content/themes/sabahia-25/assets/images/highlight-magazine.webp"/>
-                <div class="flex flex-col min-h-full justify-between gap-y-10 s:gap-y-24 p-32 s:p-40">
-                  <h3 class="h3">
-                    <br><br><br>
-                  </h3>
-                  <div>
-                    <p class="opacity-80 s:block hidden mb-24">
-                      <br><br><br>
-                    </p>
-                    <div class="flex justify-between items-center flex-wrap gap-x-24 gap-y-16">
-                      <div class="flex items-start">
-                        <p class="text-sm leading-tight border-r-1 border-white/30 pr-12 mr-12">24 March 2025</p>
-                        <p class="text-sm leading-tight">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem maxime, voluptate debitis illum doloremque iusto beatae sed in nulla inventore dicta? Dolor vitae laborum dolore. Sint veniam consequuntur quaerat repudiandae!</p>
-                      </div>
-                      <div class="card-post-highlight__arrow relative flex justify-center items-center min-w-32 size-32 rounded-full bg-white text-black border-white">
-                        <svg class="relative w-12 h-12" fill="none" height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M15.7071 8.70711C16.0976 8.31658 16.0976 7.68342 15.7071 7.29289L9.34315 0.928932C8.95262 0.538408 8.31946 0.538408 7.92893 0.928932C7.53841 1.31946 7.53841 1.95262 7.92893 2.34315L13.5858 8L7.92893 13.6569C7.53841 14.0474 7.53841 14.6805 7.92893 15.0711C8.31946 15.4616 8.95262 15.4616 9.34315 15.0711L15.7071 8.70711ZM0 9H15V7H0V9Z" fill="black">
-                          </path>
-                          <path d="M15.7071 8.70711C16.0976 8.31658 16.0976 7.68342 15.7071 7.29289L9.34315 0.928932C8.95262 0.538408 8.31946 0.538408 7.92893 0.928932C7.53841 1.31946 7.53841 1.95262 7.92893 2.34315L13.5858 8L7.92893 13.6569C7.53841 14.0474 7.53841 14.6805 7.92893 15.0711C8.31946 15.4616 8.95262 15.4616 9.34315 15.0711L15.7071 8.70711ZM0 9H15V7H0V9Z" fill="black">
-                          </path>
-                        </svg>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                </a>
-
-                <!-- Post Item -->
-                <a class="card-post-highlight relative block rounded-15 overflow-hidden" href="#" title="Product Details">
-                  <img alt="Texture" class="absolute object-cover size-full -z-10" loading="lazy" src="../wp-content/themes/sabahia-25/assets/images/highlight-magazine.webp"/>
-                <div class="flex flex-col min-h-full justify-between gap-y-10 s:gap-y-24 p-32 s:p-40">
-                  <h3 class="h3">
-                    <br><br><br>
-                  </h3>
-                  <div>
-                    <p class="opacity-80 s:block hidden mb-24">
-                      <br><br><br>
-                    </p>
-                    <div class="flex justify-between items-center flex-wrap gap-x-24 gap-y-16">
-                      <div class="flex items-start">
-                        <p class="text-sm leading-tight border-r-1 border-white/30 pr-12 mr-12">24 March 2025</p>
-                        <p class="text-sm leading-tight">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem maxime, voluptate debitis illum doloremque iusto beatae sed in nulla inventore dicta? Dolor vitae laborum dolore. Sint veniam consequuntur quaerat repudiandae!</p>
-                      </div>
-                      <div class="card-post-highlight__arrow relative flex justify-center items-center min-w-32 size-32 rounded-full bg-white text-black border-white">
-                        <svg class="relative w-12 h-12" fill="none" height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M15.7071 8.70711C16.0976 8.31658 16.0976 7.68342 15.7071 7.29289L9.34315 0.928932C8.95262 0.538408 8.31946 0.538408 7.92893 0.928932C7.53841 1.31946 7.53841 1.95262 7.92893 2.34315L13.5858 8L7.92893 13.6569C7.53841 14.0474 7.53841 14.6805 7.92893 15.0711C8.31946 15.4616 8.95262 15.4616 9.34315 15.0711L15.7071 8.70711ZM0 9H15V7H0V9Z" fill="black">
-                          </path>
-                          <path d="M15.7071 8.70711C16.0976 8.31658 16.0976 7.68342 15.7071 7.29289L9.34315 0.928932C8.95262 0.538408 8.31946 0.538408 7.92893 0.928932C7.53841 1.31946 7.53841 1.95262 7.92893 2.34315L13.5858 8L7.92893 13.6569C7.53841 14.0474 7.53841 14.6805 7.92893 15.0711C8.31946 15.4616 8.95262 15.4616 9.34315 15.0711L15.7071 8.70711ZM0 9H15V7H0V9Z" fill="black">
-                          </path>
-                        </svg>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                </a>
-
-                <!-- Post Item -->
-                <a class="card-post-highlight relative block rounded-15 overflow-hidden" href="#" title="Product Details">
-                  <img alt="Texture" class="absolute object-cover size-full -z-10" loading="lazy" src="../wp-content/themes/sabahia-25/assets/images/highlight-magazine.webp"/>
-                <div class="flex flex-col min-h-full justify-between gap-y-10 s:gap-y-24 p-32 s:p-40">
-                  <h3 class="h3">
-                    <br><br><br>
-                  </h3>
-                  <div>
-                    <p class="opacity-80 s:block hidden mb-24">
-                      <br><br><br>
-                    </p>
-                    <div class="flex justify-between items-center flex-wrap gap-x-24 gap-y-16">
-                      <div class="flex items-start">
-                        <p class="text-sm leading-tight border-r-1 border-white/30 pr-12 mr-12">24 March 2025</p>
-                        <p class="text-sm leading-tight">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem maxime, voluptate debitis illum doloremque iusto beatae sed in nulla inventore dicta? Dolor vitae laborum dolore. Sint veniam consequuntur quaerat repudiandae!</p>
-                      </div>
-                      <div class="card-post-highlight__arrow relative flex justify-center items-center min-w-32 size-32 rounded-full bg-white text-black border-white">
-                        <svg class="relative w-12 h-12" fill="none" height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M15.7071 8.70711C16.0976 8.31658 16.0976 7.68342 15.7071 7.29289L9.34315 0.928932C8.95262 0.538408 8.31946 0.538408 7.92893 0.928932C7.53841 1.31946 7.53841 1.95262 7.92893 2.34315L13.5858 8L7.92893 13.6569C7.53841 14.0474 7.53841 14.6805 7.92893 15.0711C8.31946 15.4616 8.95262 15.4616 9.34315 15.0711L15.7071 8.70711ZM0 9H15V7H0V9Z" fill="black">
-                          </path>
-                          <path d="M15.7071 8.70711C16.0976 8.31658 16.0976 7.68342 15.7071 7.29289L9.34315 0.928932C8.95262 0.538408 8.31946 0.538408 7.92893 0.928932C7.53841 1.31946 7.53841 1.95262 7.92893 2.34315L13.5858 8L7.92893 13.6569C7.53841 14.0474 7.53841 14.6805 7.92893 15.0711C8.31946 15.4616 8.95262 15.4616 9.34315 15.0711L15.7071 8.70711ZM0 9H15V7H0V9Z" fill="black">
-                          </path>
-                        </svg>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                </a>
-              
-              </div>
-            </div>
-            <div class="col-span-full text-center mt-40">
-              <a class="button button--white" data-animation="fade-up" href="https://instagram.com/alsabahiageneraltrading?igshid=YmMyMTA2M2Y=">
-                <span>Visit Instagram</span>
-                <div>
-                  <svg fill="none" height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M15.7071 8.70711C16.0976 8.31658 16.0976 7.68342 15.7071 7.29289L9.34315 0.928932C8.95262 0.538408 8.31946 0.538408 7.92893 0.928932C7.53841 1.31946 7.53841 1.95262 7.92893 2.34315L13.5858 8L7.92893 13.6569C7.53841 14.0474 7.53841 14.6805 7.92893 15.0711C8.31946 15.4616 8.95262 15.4616 9.34315 15.0711L15.7071 8.70711ZM0 9H15V7H0V9Z" fill="white">
-                    </path>
-                    <path d="M15.7071 8.70711C16.0976 8.31658 16.0976 7.68342 15.7071 7.29289L9.34315 0.928932C8.95262 0.538408 8.31946 0.538408 7.92893 0.928932C7.53841 1.31946 7.53841 1.95262 7.92893 2.34315L13.5858 8L7.92893 13.6569C7.53841 14.0474 7.53841 14.6805 7.92893 15.0711C8.31946 15.4616 8.95262 15.4616 9.34315 15.0711L15.7071 8.70711ZM0 9H15V7H0V9Z" fill="white">
-                    </path>
-                  </svg>
-                </div>
-              </a>
-            </div>
+      <section class="blog section">
+        <div class="-container -grid">
+          <div class="col-span-4 s:col-span-12 s:col-start-2">
+            <h2 class="ontitle" data-animation="subtitle">@sabahia_ae</h2>
+            <h3 class="h1" data-animation="paragraph">Instagram</h3>
+            <div id="instagram-feed" class="blog__grid grid grid-cols-12 grid-row-2 gap-24 instagram-section instagram-feed"></div>
           </div>
-        </section>
+          <div class="col-span-full text-center mt-40">
+            <a class="button button--white" data-animation="fade-up" href="https://www.instagram.com/sabahia_ae/">
+              <span>Visit Instagram</span>
+              <div>
+                <svg fill="none" height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M15.7071 8.70711C16.0976 8.31658 16.0976 7.68342 15.7071 7.29289L9.34315 0.928932C8.95262 0.538408 8.31946 0.538408 7.92893 0.928932C7.53841 1.31946 7.53841 1.95262 7.92893 2.34315L13.5858 8L7.92893 13.6569C7.53841 14.0474 7.53841 14.6805 7.92893 15.0711C8.31946 15.4616 8.95262 15.4616 9.34315 15.0711L15.7071 8.70711ZM0 9H15V7H0V9Z" fill="white"></path>
+                </svg>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
       </div>
 
       <div class="page-container" data-taxi-view="">
@@ -517,7 +404,7 @@
             <a href="https://www.linkedin.com/company/al-sabahia-general-trading-llc/" rel="noopener" target="_blank">
               <img alt="Linkedin" class="w-20" height="19" loading="lazy" src="../wp-content/themes/sabahia-25/assets/images/linkedin.svg" width="19"/>
             </a>
-            <a href="https://instagram.com/alsabahiageneraltrading?igshid=YmMyMTA2M2Y=" rel="noopener" target="_blank">
+            <a href="https://www.instagram.com/sabahia_ae/" rel="noopener" target="_blank">
               <img alt="Youtube" class="w-24" height="16" loading="lazy" src="../wp-content/themes/sabahia-25/assets/images/youtube.svg" width="22"/>
             </a>
           </div>
@@ -538,5 +425,6 @@
       event.stopImmediatePropagation();
     }, { passive: true });
   </script>
+  <script src="./script.js"></script>
   </body>
 </html>
