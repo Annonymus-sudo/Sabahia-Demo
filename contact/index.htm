@@ -1,5 +1,4 @@
 <html lang="en-UK">
-
 <head>
   <meta charset="utf-8"/>
   <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
@@ -11,6 +10,17 @@
     img:is([sizes="auto" i], [sizes^="auto," i]) {
           contain-intrinsic-size: 3000px 1500px;
         }
+    body {
+      background-image: url('https://alsabahia.com/wp-content/themes/sabahia-25/assets/images/mat.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      min-height: 100vh;
+    }
+    /* .hero{
+      background:yellow;
+    } */
   </style>
 
   <title>
@@ -66,8 +76,8 @@
     <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
     <link href="../css2?family=Inter:ital,opsz,wght@0,14.32,100.900;1,14.32,100.900&amp;display=swap" rel="stylesheet"/>
   
-    <script src="../wp-includes/js/imageLoader.js" defer></script>
     <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
+    <script src="../wp-includes/js/imageLoader.js" defer></script>
 
     <style>
       .pageclip-form__submit:disabled {
@@ -93,24 +103,67 @@
         text-align: center;
         margin-top: 0.5rem;
       }
+    .hero {
+  background: #000; /* pure black center */
+  overflow: hidden;
+  color: #fff;
+  position: relative;
+}
+
+/* smoky diagonal layer 1 - bold drifting */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at top left, rgba(139, 0, 139, 0.45), transparent 70%), 
+              radial-gradient(circle at bottom right, rgba(75, 0, 130, 0.4), transparent 70%);
+  filter: blur(140px);
+  animation: smokeDrift 8s ease-in-out infinite;
+  z-index: 0;
+}
+
+/* smoky diagonal layer 2 - wavy floating */
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at top right, rgba(147, 112, 219, 0.35), transparent 70%), 
+              radial-gradient(circle at bottom left, rgba(106, 90, 205, 0.3), transparent 70%);
+  filter: blur(180px);
+  animation: smokeWave 25s ease-in-out infinite;
+  z-index: 0;
+}
+
+/* Keyframes - stronger diagonal drift */
+@keyframes smokeDrift {
+  0%   { transform: translate(-15%, -15%) scale(1) rotate(0deg); opacity: 0.5; }
+  50%  { transform: translate(15%, 15%) scale(1.2) rotate(20deg); opacity: 0.8; }
+  100% { transform: translate(-15%, -15%) scale(1) rotate(0deg); opacity: 0.5; }
+}
+
+/* Keyframes - noticeable wavy float */
+@keyframes smokeWave {
+  0%   { transform: translate(0%, 0%) scale(1) rotate(0deg); opacity: 0.4; }
+  25%  { transform: translate(-10%, 5%) scale(1.15) rotate(-10deg); opacity: 0.7; }
+  50%  { transform: translate(10%, -8%) scale(1.25) rotate(10deg); opacity: 0.85; }
+  75%  { transform: translate(-8%, 10%) scale(1.15) rotate(-5deg); opacity: 0.6; }
+  100% { transform: translate(0%, 0%) scale(1) rotate(0deg); opacity: 0.4; }
+}
+
+/* keep hero text above smoke */
+.hero * {
+  position: relative;
+  z-index: 1;
+}
+
+
+
     </style>
 </head>
 
-<body class="home wp-singular page-template page-template-templates page-template-home page-template-templateshome-php page  wp-embed-responsive wp-theme-qwerio-24" data-host="../en/" data-theme="https://alsabahia.com/wp-content/themes/qwerio-24">
-  <!-- Preloader -->
-  <div class="preloader fixed flex inset-0 size-full">
-    <div class="preloader__inner h-40 overflow-hidden">
-      <div class="preloader__text flex flex-col items-end text-h5 font-title font-medium">
-        <span>00%</span>
-        <span>30%</span>
-        <span>70%</span>
-        <span>100%</span>
-      </div>
-    </div>
-  </div>
-
+<body class="wp-singular page-template-default page wp-embed-responsive wp-theme-qwerio-24">
   <header class="header">
-    <div class="-container" data-animation="opa" data-animation-delay=".8">
+    <div class="-container">
       <nav class="header__nav relative">
         <div class="header__wrapper">
           <!-- Nav Logo -->
@@ -127,87 +180,10 @@
                   </a>
                 </li>
                 <!-- Nav Menu Item 2 -->
-                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children --three-cols menu-item-2033" id="menu-item-2033">
+                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2046" id="menu-item-2046">
                   <a href="../products/index.htm">
                     <span class="menu__item__text">Our Product Category</span>
                   </a>
-                  <!-- Submenu Item 1-->
-                  <div class="inner">
-                    <ul class="sub-menu">
-                      <li class="menu-item menu-item-type-post_type menu-item-object-accompagnement menu-item-2038" id="menu-item-2038">
-                        <a href="../products/category/FoodandBeverages/index.htm">
-                          <span class="menu__item__picto">
-                            <img alt="picto" height="40" src="https://alsabahia.com/wp-content/uploads/cat/1.svg"  width="40"/>
-                          </span>
-                          <span class="menu__item__text">Food & Beverages</span>
-                        </a>
-                      </li>
-                      <li class="menu-item menu-item-type-post_type menu-item-object-accompagnement menu-item-2036" id="menu-item-2036">
-                        <a href="../products/category/LaundryProducts/index.htm">
-                          <span class="menu__item__picto">
-                            <img alt="picto" height="20" src="https://alsabahia.com/wp-content/uploads/cat/2.svg"  width="20"/>
-                          </span>
-                          <span class="menu__item__text">Laundry Products</span>
-                        </a>
-                      </li>
-                      <li class="menu-item menu-item-type-post_type menu-item-object-accompagnement menu-item-2035" id="menu-item-2035">
-                        <a href="../products/category/CleaningProducts/index.htm">
-                          <span class="menu__item__picto">
-                            <img alt="picto" height="20" src="https://alsabahia.com/wp-content/uploads/cat/3.png"  width="21"/>
-                          </span>
-                          <span class="menu__item__text">Cleaning Products</span>
-                        </a>
-                      </li>
-                      <li class="menu-item menu-item-type-post_type menu-item-object-accompagnement menu-item-2034" id="menu-item-2034">
-                        <a href="../products/category/DisposableProducts/index.htm">
-                          <span class="menu__item__picto">
-                            <img alt="picto" height="20" src="https://alsabahia.com/wp-content/uploads/cat/4.png"  width="20"/>
-                          </span>
-                          <span class="menu__item__text">Disposable Products</span>
-                        </a>
-                      </li>
-                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2040" id="menu-item-2040">
-                        <a href="../products/category/HealthandBeauty/index.htm">
-                          <span class="menu__item__picto">
-                            <img alt="picto" height="20" src="https://alsabahia.com/wp-content/uploads/cat/5.svg"  width="20"/>
-                          </span>
-                          <span class="menu__item__text">Health & Beauty</span>
-                        </a>
-                      </li>
-                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2040" id="menu-item-2040">
-                        <a href="https://alsabahia.com/products/category/Sabio/index.htm">
-                          <span class="menu__item__picto">
-                            <img alt="picto" height="20" src="https://alsabahia.com/wp-content/uploads/sabio-rm.png"  width="20"/>
-                          </span>
-                          <span class="menu__item__text">Sabio</span>
-                        </a>
-                      </li>
-                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2040" id="menu-item-2040">
-                        <a href="https://alsabahia.com/products/category/Sabs/index.htm">
-                          <span class="menu__item__picto">
-                            <img alt="picto" height="20" src="https://alsabahia.com/wp-content/uploads/sabs-rm.png"  width="20"/>
-                          </span>
-                          <span class="menu__item__text">Sabs</span>
-                        </a>
-                      </li>
-                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2040" id="menu-item-2040">
-                        <a href="https://alsabahia.com/products/category/Niara/index.htm">
-                          <span class="menu__item__picto">
-                            <img alt="picto" height="20" src="https://alsabahia.com/wp-content/uploads/niara-rm.png"  width="20"/>
-                          </span>
-                          <span class="menu__item__text">Niara</span>
-                        </a>
-                      </li>
-                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2040" id="menu-item-2040">
-                        <a href="https://alsabahia.com/products/category/Femy/index.htm">
-                          <span class="menu__item__picto">
-                            <img alt="picto" height="20" src="https://alsabahia.com/wp-content/uploads/femy-rm.png"  width="20"/>
-                          </span>
-                          <span class="menu__item__text">Femy</span>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
                 </li>
                 <!-- Nav Menu Item 3 -->
                 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2046" id="menu-item-2046">
@@ -249,9 +225,9 @@
     </form>
   </div>
   
-  <main data-taxi="">
-    <div class="page-container" data-taxi-view="">
-    <div class="gl" data-mat="https://alsabahia.com/wp-content/themes/sabahia-25/assets/images/mat.png"></div>
+  <main>
+    <div class="page-container">
+      
     <!-- Hero Section -->
       <section class="hero relative overflow-hidden pt-40">
           <div class="min-h-[100svh] flex flex-col justify-center -container section">
@@ -263,7 +239,7 @@
                   Let us talk
                 </h2>               
               </div>
-              <p class="text-lg s:text-xl text-balance" data-animation-delay=".4" style="color: #cdc1a4">
+              <p class="text-lg s:text-xl text-balance" style="color: #cdc1a4">
                 Your trusted partner for seamless FMCG distribution across UAE & beyond.
               </p>
             </div>
@@ -273,7 +249,6 @@
             <!-- Left Section: Text Content -->
             <div class="col-span-4 s:col-span-5 s:col-start-2">
               <div class="sectors__item relative flex justify-center items-center rounded-25 overflow-hidden border-1 border-white/40">
-                <!-- <img alt="Texture" class="absolute object-cover size-full" height="" loading="lazy" src="https://alsabahia.com/wp-content/themes/sabahia-25/assets/images/texture-1.webp" width=""/> -->
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3618.1650561739884!2d55.04680297468969!3d24.926446442615145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f0d00233796ff%3A0x1771fa6e89c63faf!2sNIP!5e0!3m2!1sen!2sin!4v1751541607121!5m2!1sen!2sin" class="absolute object-cover size-full" width="100%" height="100%"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
               </div>
             </div>
@@ -336,13 +311,12 @@
                         the address of the data controller.
                     </p>
                 </div>
-                <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
             </div>
         </div>
         </section>
       </div>
 
-      <div class="page-container" data-taxi-view="">
+      <div class="page-container">
         <!-- Contact Details Section -->
     <section class="offices section">
       <div class="-container -grid">
@@ -388,9 +362,6 @@
   </section>
       </div>
         
-    
-
-
     <!-- Footer Section -->
     <footer class="footer relative pt-40 bg-black z-10">
       <div class="-grid -container gap-y-32">
@@ -445,46 +416,6 @@
         </div>
       </div>
     </footer>
-
-    </div>
   </main>
-
-    <div class="footer-scripts">
-      <script id="credits-js" src="https://alsabahia.com/wp-content/themes/sabahia-25/assets/scripts/credits.js?ver=1.0.0.1737044592" type="text/javascript"></script>
-      <script id="scripts-js" src="https://alsabahia.com/wp-content/themes/sabahia-25/dist/appJS.js?ver=1737985116" type="text/javascript">
-      </script>
-    </div>
-  <script>
-    document.addEventListener('wheel', (event) => {
-      event.stopImmediatePropagation();
-    }, { passive: true });
-  </script>
-  <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
-  <!-- JavaScript for Form Submission Handling -->
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      const form = document.querySelector('.pageclip-form');
-      const submitButton = form.querySelector('.pageclip-form__submit');
-      const loadingSpinner = form.querySelector('.loading-spinner');
-
-      form.addEventListener('submit', function () {
-        submitButton.disabled = true;
-        loadingSpinner.style.display = 'block';
-      });
-
-      window.Pageclip.form(form, {
-        successTemplate: '<div class="pageclip-form__success__message">Thank you for your submission! We will get back to you soon.</div>',
-        onResponse: function (error, response) {
-          submitButton.disabled = false;
-          loadingSpinner.style.display = 'none';
-          if (error) {
-            alert('Error submitting form. Please try again.');
-          } else {
-            form.reset(); // Reset form after successful submission
-          }
-        }
-      });
-    });
-  </script>
-  </body>
+</body>
 </html>

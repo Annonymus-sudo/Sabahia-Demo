@@ -60,9 +60,49 @@
           font-style: italic;
         }
     </style>
+    <style>
+       .hero,
+.description {
+  background: #000; /* pure black center */
+  overflow: hidden;
+  color: #fff;
+  position: relative;
+}
+
+.hero::before,
+.description::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at top left, rgba(139, 0, 139, 0.45), transparent 70%), 
+              radial-gradient(circle at bottom right, rgba(75, 0, 130, 0.4), transparent 70%);
+  filter: blur(140px);
+  animation: smokeDrift 8s ease-in-out infinite;
+  z-index: 0;
+}
+
+.hero::after,
+.description::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at top right, rgba(147, 112, 219, 0.35), transparent 70%), 
+              radial-gradient(circle at bottom left, rgba(106, 90, 205, 0.3), transparent 70%);
+  filter: blur(180px);
+  animation: smokeWave 25s ease-in-out infinite;
+  z-index: 0;
+}
+
+.hero *,
+.description * {
+  position: relative;
+  z-index: 1;
+}
+
+    </style>
   
-    <link href="https://alsabahia.com/wp-content/themes/sabahia-25/style.css" id="theme-css" media="all" rel="stylesheet" type="text/css"/>
-    <link href="https://alsabahia.com/wp-content/themes/sabahia-25/dist/appCSS.css" id="styles-css" media="all" rel="stylesheet" type="text/css"/>
+    <link href="./wp-content/themes/sabahia-25/style.css" id="theme-css" media="all" rel="stylesheet" type="text/css"/>
+    <link href="./wp-content/themes/sabahia-25/dist/appCSS.css" id="styles-css" media="all" rel="stylesheet" type="text/css"/>
     <link href="https://alsabahia.com/wp-content/themes/sabahia-25/assets/images/cropped-favicon-32x32.png" rel="icon" sizes="32x32"/>
     <link href="https://alsabahia.com/wp-content/uploads/2024/10/cropped-favicon-192x192.png" rel="icon" sizes="192x192"/>
     <link href="https://fonts.googleapis.com" rel="preconnect"/>
@@ -103,87 +143,10 @@
                   </a>
                 </li>
                 <!-- Nav Menu Item 2 -->
-                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children --three-cols menu-item-2033" id="menu-item-2033">
-                  <a href="./products/index.htm">
+                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2046" id="menu-item-2046">
+                  <a href="../products/index.htm">
                     <span class="menu__item__text">Our Product Category</span>
                   </a>
-                  <!-- Submenu Item 1-->
-                  <div class="inner">
-                    <ul class="sub-menu">
-                      <li class="menu-item menu-item-type-post_type menu-item-object-accompagnement menu-item-2038" id="menu-item-2038">
-                        <a href="./products/category/FoodandBeverages/index.htm">
-                          <span class="menu__item__picto">
-                            <img alt="picto" height="40" src="https://alsabahia.com/wp-content/uploads/cat/1.svg"  width="40"/>
-                          </span>
-                          <span class="menu__item__text">Food & Beverages</span>
-                        </a>
-                      </li>
-                      <li class="menu-item menu-item-type-post_type menu-item-object-accompagnement menu-item-2036" id="menu-item-2036">
-                        <a href="./products/category/LaundryProducts/index.htm">
-                          <span class="menu__item__picto">
-                            <img alt="picto" height="20" src="https://alsabahia.com/wp-content/uploads/cat/2.svg"  width="20"/>
-                          </span>
-                          <span class="menu__item__text">Laundry Products</span>
-                        </a>
-                      </li>
-                      <li class="menu-item menu-item-type-post_type menu-item-object-accompagnement menu-item-2035" id="menu-item-2035">
-                        <a href="./products/category/CleaningProducts/index.htm">
-                          <span class="menu__item__picto">
-                            <img alt="picto" height="20" src="https://alsabahia.com/wp-content/uploads/cat/3.png"  width="21"/>
-                          </span>
-                          <span class="menu__item__text">Cleaning Products</span>
-                        </a>
-                      </li>
-                      <li class="menu-item menu-item-type-post_type menu-item-object-accompagnement menu-item-2034" id="menu-item-2034">
-                        <a href="./products/category/DisposableProducts/index.htm">
-                          <span class="menu__item__picto">
-                            <img alt="picto" height="20" src="https://alsabahia.com/wp-content/uploads/cat/4.png"  width="20"/>
-                          </span>
-                          <span class="menu__item__text">Disposable Products</span>
-                        </a>
-                      </li>
-                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2040" id="menu-item-2040">
-                        <a href="./products/category/HealthandBeauty/index.htm">
-                          <span class="menu__item__picto">
-                            <img alt="picto" height="20" src="https://alsabahia.com/wp-content/uploads/cat/5.svg"  width="20"/>
-                          </span>
-                          <span class="menu__item__text">Health & Beauty</span>
-                        </a>
-                      </li>
-                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2040" id="menu-item-2040">
-                        <a href="https://alsabahia.com/products/category/Sabio/index.htm">
-                          <span class="menu__item__picto">
-                            <img alt="picto" height="20" src="https://alsabahia.com/wp-content/uploads/sabio-rm.png"  width="20"/>
-                          </span>
-                          <span class="menu__item__text">Sabio</span>
-                        </a>
-                      </li>
-                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2040" id="menu-item-2040">
-                        <a href="https://alsabahia.com/products/category/Sabs/index.htm">
-                          <span class="menu__item__picto">
-                            <img alt="picto" height="20" src="https://alsabahia.com/wp-content/uploads/sabs-rm.png"  width="20"/>
-                          </span>
-                          <span class="menu__item__text">Sabs</span>
-                        </a>
-                      </li>
-                      <!-- <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2040" id="menu-item-2040">
-                        <a href="https://alsabahia.com/products/category/Niara/index.htm">
-                          <span class="menu__item__picto">
-                            <img alt="picto" height="20" src="https://alsabahia.com/wp-content/uploads/niara-rm.png"  width="20"/>
-                          </span>
-                          <span class="menu__item__text">Niara</span>
-                        </a>
-                      </li> -->
-                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2040" id="menu-item-2040">
-                        <a href="https://alsabahia.com/products/category/Femy/index.htm">
-                          <span class="menu__item__picto">
-                            <img alt="picto" height="20" src="https://alsabahia.com/wp-content/uploads/femy-rm.png"  width="20"/>
-                          </span>
-                          <span class="menu__item__text">Femy</span>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
                 </li>
                 <!-- Nav Menu Item 3 -->
                 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2046" id="menu-item-2046">
@@ -600,8 +563,8 @@
   </main>
 
     <div class="footer-scripts">
-      <script id="credits-js" src="https://alsabahia.com/wp-content/themes/sabahia-25/assets/scripts/credits.js?ver=1.0.0.1737044592" type="text/javascript"></script>
-      <script id="scripts-js" src="https://alsabahia.com/wp-content/themes/sabahia-25/dist/appJS.js?ver=1737985116" type="text/javascript">
+      <script id="credits-js" src="./wp-content/themes/sabahia-25/assets/scripts/credits.js" type="text/javascript"></script>
+      <script id="scripts-js" src="./wp-content/themes/sabahia-25/dist/appJS.js" type="text/javascript">
       </script>
     </div>
   <script>

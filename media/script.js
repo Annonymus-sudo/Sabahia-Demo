@@ -1,4 +1,4 @@
-const feedUrl = "https://rss.app/feeds/v1.1/GBOn0b8zoWs2iMen.json";
+const feedUrl = "insta.json";
 const container = document.getElementById("instagram-feed");
 
 fetch(feedUrl)
